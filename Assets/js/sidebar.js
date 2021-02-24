@@ -17,9 +17,6 @@ function showOrHideDiv() {
   }
 }
 
-
-
-
 var header = document.getElementById("sidebarCode");
 header.innerHTML = `  <!-- start -->
 <div id="demo">

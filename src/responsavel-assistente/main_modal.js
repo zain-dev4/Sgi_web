@@ -8,19 +8,19 @@ app.config(function($routeProvider) {
     //   templateUrl: "view/service.html",
     // })
     .when("/calender_yearly", {
-      templateUrl: "calender_yearly.html",
+      templateUrl: "view/calender_yearly.html",
     })
     .when("/calender_Monthly", {
-      templateUrl: "calender_Month.html",
+      templateUrl: "view/calender_Month.html",
     })
     .when("/calender_Weakly", {
-      templateUrl: "calender_Weakly.html",
+      templateUrl: "view/calender_Weakly.html",
     })
     .when("/Calender_daily", {
-      templateUrl: "Calender_daily.html",
+      templateUrl: "view/Calender_daily.html",
     })
     .when("/Responsavel", {
-      templateUrl: "Responsavel.html",
+      templateUrl: "view/Responsavel.html",
     });
     app.controller("firstController",function($scope){
 

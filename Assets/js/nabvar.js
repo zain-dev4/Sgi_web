@@ -1,7 +1,7 @@
 var header = document.getElementById("NavCode");
 header.innerHTML = `<!-- navbar start -->
 <nav class="navbar navbar-expand-xl navbar-light pb-0">
-<a class="navbar-brand" href="#"><img src="./Assets/icon/logo.png" class="mainlogo-portal"></a>
+<a class="navbar-brand" href="#"><img src="../Assets/icon/logo.png" class="mainlogo-portal"></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
@@ -23,14 +23,14 @@ aria-label="Search">
 class="z-circle-yellow"></Span></button>
 </li>
 <li class="nav-item ml-2">
-<a class="nav-link" href="#"><img src="./Assets/icon/icon 2.png" class="z-w-icons"></a>
+<a class="nav-link" href="#"><img src="../Assets/icon/icon 2.png" class="z-w-icons"></a>
 </li>
 
 <li class="nav-item ml-2">
-<a class="nav-link disabled" href="#"><img src="./Assets/icon/icon-01.png" class="z-w-icons-001"></a>
+<a class="nav-link disabled" href="#"><img src="../Assets/icon/icon-01.png" class="z-w-icons-001"></a>
 </li>
 <li class="nav-item ml-2">
-<a class="nav-link disabled" href="#"><img src="./Assets/icon//face-01.png" class="z-w-icons-001"></a>
+<a class="nav-link disabled" href="#"><img src="../Assets/icon//face-01.png" class="z-w-icons-001"></a>
 </li>
 <li class="nav-item dropdown ml-2">
 <a class="nav-link dropdown-toggle mt-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
