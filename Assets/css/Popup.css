@@ -1,0 +1,90 @@
+.table-bordered td, .table-bordered th {
+    border: 1px solid #afafaf;
+    box-sizing: border-box;
+    width: 100px;
+    text-align: center;
+}
+
+.bg-color-portal
+{
+    background-color: #4097D8;
+}
+
+.bg-dropdown-Portal
+{
+    background-color: #1A5A82;
+}
+
+.table-Text-color-portal
+{
+    color: #4097D8;
+    font-weight: 600;
+}
+
+.vertical-text-portal
+{
+    color: #4097D8;
+    height: 100px;
+    width: 10px;  
+    transform: rotate(-90deg);
+    padding-right: 180px;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+table td
+{
+    padding: 0.20rem !important;
+}
+
+.Width-eighty-Portal
+{
+    max-width: 80px;
+}
+
+[list]::-webkit-calendar-picker-indicator {
+   
+    
+    opacity: 100;
+    background-color: #1A5A82;
+    padding: 15px 15px;
+    margin-right: -12px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.fa-chevron-left{
+    position: absolute;
+    top: 11px;
+    left: 6px;
+    z-index: 111111111;
+}
+.fa-chevron-right{
+    position: absolute;
+    top: 11px;
+   right: 6px;
+    z-index: 111111111;
+}
+.padd-popup-portal{
+    padding:0.5rem 0rem 0.5rem 10rem;
+    background-color: #1A5A82;
+    border: 1px 1px 0px 1px solid lightgray;
+
+}
+.padd-popup-portal>div{
+    padding: 0px 5px 0px 45px;
+    color: white;
+   
+}
+
+.carousel-item-portal
+{
+    background-color: #1A5A82;
+
+}
+
+
+

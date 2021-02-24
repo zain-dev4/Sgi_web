@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="" data-ng-app="calendar-weekly-view-portal-tpl-html">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendar Weekly View Portal</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./Assets/css/sidebar.css">
+  <link rel="stylesheet" href="Assets/css/navbar.css">
+<link rel="stylesheet" href="./Assets/css/Popup.css">
+
+<link rel="stylesheet" href="./Assets/css/longReport.css">
+<link rel="stylesheet" href="Assets/css/index.css">
+<link rel="stylesheet" href="./Assets/css/calendar.css">
+<link rel="stylesheet" href="./Assets/css/page.css">
+<link rel="stylesheet" href="./Assets/css/task.css">
+
+
+  </head>
+ 
+
+  <body  >
+    
+              <div class="row pt-4">
+                <div class="col-md-3 col-lg-3 col-sm-12 pt-1">
+                  <h5 class="a-date selected-change"></h5>
+                </div>
+              
+                <div class="col-md-2 col-lg-2 col-sm-2 a-colorBlue-portal bg-white a-borderRadius-portal   col-lg-portal ml-auto">
+               <div class="top-heading-portal  ">
+                <h6 class="top-heading-padding-portal top-heading-bottom-border-portal"><a class="text-decoration font-weight-bold" href="#!/Calender_daily">Dia</a></h6>
+               </div>
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-2 a-colorBlue-portal bg-light a-borderRadius-portal col-lg-portal" >
+                 <div class="top-heading-portal ">
+                   <h6 class="top-heading-padding-portal"><a class="text-decoration" href="#!/calender_Weakly">Semana</a></h6>
+                 </div>
+                 </div>
+                 <div class="col-md-2 col-lg-2 col-sm-2 a-colorBlue-portal bg-light a-borderRadius-portal  col-lg-portal">
+                 <div class="top-heading-portal"> <h6 class="top-heading-padding-portal"><a class="text-decoration" href="#!/calender_Monthly">Mês</a></h6></div>
+                 </div>
+                 <div class="col-md-2 col-lg-2 col-sm-2 a-colorBlue-portal bg-light a-borderRadius-portal  col-lg-portal">
+                  <div class="top-heading-portal"><h6 class="top-heading-padding-portal"><a class="text-decoration" href="#!/calender_yearly">Ano</a></h6></div>
+                 </div>
+              
+              
+              </div>
+             <div class="row  light mt-3  ">
+                <!-- <div class="heading-portal d-flex main-heading-portal5"><p class="time-font-size-portal"></p></div> -->
+               <div class="d-flex main-row-portal light " id="myDIV">
+                 <div class="heading-portal d-flex main-heading-portal5 btn1-portal"><p class="time-font-size-portal">Domingo, 3</p></div>
+                <div class="heading-portal d-flex main-heading-portal5 btn1-portal  "><p class="time-font-size-portal  ">Segunda-feira, 4</p></div>
+                <div class="heading-portal d-flex main-heading-portal5 btn1-portal  "> <p class="time-font-size-portal">Terça-feira, 5</p></div>
+                <div class="heading-portal d-flex main-heading-portal5 btn1-portal"><p class="time-font-size-portal">Quarta-feira, 6</p></div>
+                <div class="heading-portal d-flex main-heading-portal5 btn1-portal"><p class="time-font-size-portal">Quinta-feira, 7</p></div>
+                <div class="heading-portal d-flex main-heading-portal5 btn1-portal color-bg"><p class="time-font-size-portal">Sexta-feira, 8</p></div>
+                <div class="heading-portal d-flex main-heading-portal5 btn1-portal"><p class="time-font-size-portal">Sábado, 9</p></div>
+    
+               </div>
+            </div>
+          
+              <div class="row border pb-4">
+                <div class="col-lg-1 col-md-1 col-sm-1  ">
+               <div class="row ">
+                 <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                 <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal ">
+                  <p class="time-font-size-portal mb-0 ">09:00</p>
+                 </div>
+               </div>
+               <!-- 2 -->
+               <div class="row ">
+                <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                 <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal ">
+                  <p class="time-font-size-portal mb-0 ">09:30</p>
+                 </div>
+              </div>
+               <!-- 2 end -->
+                  <!-- 3 -->
+                  <div class="row ">
+                    <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                 <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal ">
+                  <p class="time-font-size-portal mb-0 ">10:00</p>
+                 </div>
+                  </div>
+                   <!-- 3 end -->
+                       <!-- 4 -->
+                  <div class="row ">
+                    <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                    <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal ">
+                     <p class="time-font-size-portal mb-0 ">11:00</p>
+                    </div>
+                  </div>
+                   <!-- 4 end -->
+                            <!-- 5 -->
+                  <div class="row ">
+                    <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                    <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal ">
+                     <p class="time-font-size-portal mb-0 ">11:30</p>
+                    </div>
+                  </div>
+                   <!-- 5 end -->
+                               <!-- 6 -->
+                  <div class="row ">
+                    <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                    <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal ">
+                     <p class="time-font-size-portal mb-0 ">12:00</p>
+                    </div>
+                  </div>
+                   <!-- 6 end -->
+                                   <!-- 7 -->
+                  <div class="row ">
+                    <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                    <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal ">
+                     <p class="time-font-size-portal mb-0 ">12:30</p>
+                    </div>
+                  </div>
+                   <!-- 7 end -->
+                                     <!-- 8 -->
+                  <div class="row ">
+                    <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                 <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal ">
+                  <p class="time-font-size-portal mb-0 ">13:00</p>
+                 </div>
+                  </div>
+                   <!-- 8 end -->
+                                        <!-- 9 -->
+                  <div class="row ">
+                    <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                    <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal ">
+                     <p class="time-font-size-portal mb-0 ">13:30</p>
+                    </div>
+                  </div>
+                   <!-- 9 end -->
+                                                  <!-- 10 -->
+                  <div class="row ">
+                    <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                    <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal ">
+                     <p class="time-font-size-portal mb-0 ">14:00</p>
+                    </div>
+                  </div>
+                   <!-- 10 end -->
+                                                  <!-- 11 -->
+                  <div class="row ">
+                    <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                 <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal ">
+                  <p class="time-font-size-portal mb-0 ">15:00</p>
+                 </div>
+                  </div>
+                   <!-- 11 end -->
+                                                  <!-- 12 -->
+                  <div class="row ">
+                    <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                    <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal ">
+                     <p class="time-font-size-portal mb-0 ">15:30</p>
+                    </div>
+                  </div>
+                   <!-- 12 end -->
+                                                  <!-- 13 -->
+                  <div class="row ">
+                    <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                 <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal ">
+                  <p class="time-font-size-portal mb-0 ">16:00</p>
+                 </div>
+                  </div>
+                   <!-- 13 end -->
+                                                  <!-- 14 -->
+                  <div class="row ">
+                    <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                    <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal ">
+                     <p class="time-font-size-portal mb-0 ">16:30</p>
+                    </div>
+                  </div>
+                   <!-- 14 end -->
+                                                  <!-- 15 -->
+                  <div class="row ">
+                    <div class="col-md-4 col-lg-4 col-sm-4 height-col-side-portal p-0"></div>
+                 <div class="col-md-8 col-lg-8 col-sm-8 col-eight-portal  " id="last-row-top-portal">
+                  <p class="time-font-size-portal mb-0 ">17:00</p>
+                 </div>
+                  </div>
+                   <!-- 15 end -->
+                </div>
+                <div class="col-lg-11 col-md-11 col-sm-11">
+                  <div class="row row-height-portal"></div>
+                  <div class="row row-height-portal">
+                    <div class="heading-portal d-flex main-heading-portal"></div>
+                    <div class="heading-portal d-flex main-heading-portal bottom-border-portal bg-light"><p class="time-font-size-portal1 color-black">Disciplina</p></div>
+                    <div class="heading-portal d-flex main-heading-portal"></div>
+                    <div class="heading-portal d-flex main-heading-portal"></div>
+                    <div class="heading-portal d-flex main-heading-portal"></div>
+                    <div class="heading-portal d-flex main-heading-portal"></div>
+                    <div class="heading-portal d-flex main-heading-portal bottom-border-portal bg-light"><p class="time-font-size-portal1 color-black">Disciplina</p></div>
+        
+                  </div>
+                  <!-- 2 -->
+                  <div class="row row-height-portal">
+                    <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                    <div class="heading-portal d-flex main-heading-portal  text-white"> <p class="time-font-size-portal"></p></div>
+                    <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                    <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                    <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                    <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                    <div class="heading-portal d-flex main-heading-portal bg-light color-black border-green-portal"><p class="time-font-size-portal ">Disciplina</p></div>
+                  </div>
+                  <!-- 2 end -->
+                  <!-- 3 -->
+                  <div class="row row-height-portal">
+                    <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                    <div class="heading-portal d-flex main-heading-portal bg-light color-black orange-portal"><p class="time-font-size-portal ">Disciplina</p></div>
+                    <div class="heading-portal d-flex main-heading-portal  text-white"> <p class="time-font-size-portal"></p></div>
+                    <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                    <div class="heading-portal d-flex main-heading-portal bg-light color-black blue-portal "><p class="time-font-size-portal ">Disciplina</p></div>
+                    <div class="heading-portal d-flex main-heading-portal "><p class="time-font-size-portal "></p></div>
+                    <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                  
+                  </div>
+                  <!-- 3 end -->
+                    <!-- 4 -->
+                    <div class="row row-height-portal">
+                      <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                      <div class="heading-portal d-flex main-heading-portal  text-white"> <p class="time-font-size-portal"></p></div>
+                      <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                      <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                      <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                      <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                      <div class="heading-portal d-flex main-heading-portal bg-light color-black blue-portal "><p class="time-font-size-portal ">Disciplina</p></div>
+                    </div>
+                    <!-- 4 end -->
+                        <!-- 5 -->
+                        <div class="row row-height-portal">
+                          <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                          <div class="heading-portal d-flex main-heading-portal  text-white"> <p class="time-font-size-portal"></p></div>
+                          <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                          <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                          <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                          <div class="heading-portal d-flex main-heading-portal bg-light color-black light-blue-border "><p class="time-font-size-portal ">Disciplina</p></div>
+                          <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                         
+                        </div>
+                        <!-- 5 end -->
+                            <!-- 6 -->
+                            <div class="row row-height-portal">
+                              <div class="heading-portal d-flex main-heading-portal bg-light color-black light-blue-border "><p class="time-font-size-portal ">Disciplina</p></div>
+                              <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                              <div class="heading-portal d-flex main-heading-portal bg-light color-black purple-border "><p class="time-font-size-portal ">Disciplina</p></div>
+                              <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                              <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                              <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                              
+                              <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                             
+                            </div>
+                            <!-- 6 end -->
+                            <!-- 7 -->
+                            <div class="row row-height-portal">
+                              <div class="heading-portal d-flex main-heading-portal"></div>
+                              <div class="heading-portal d-flex main-heading-portal"></div>
+                              <div class="heading-portal d-flex main-heading-portal"></div>
+                              <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal1 color-black"></p></div>
+                              <div class="heading-portal d-flex main-heading-portal"></div>
+                              <div class="heading-portal d-flex main-heading-portal"></div>
+                              <div class="heading-portal d-flex main-heading-portal"></div>
+                              <div class="heading-portal d-flex main-heading-portal"></div>
+                              <div class="heading-portal d-flex main-heading-portal"></div>
+                  
+                            </div>
+                            <!-- 7 end -->
+                                <!-- 8 -->
+                                <div class="row row-height-portal">
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal1 color-black"></p></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                      
+                                </div>
+                                <!-- 8 end -->
+                                    <!-- 9 -->
+                            <div class="row row-height-portal">
+                           
+                              <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                              <div class="heading-portal d-flex main-heading-portal bg-light color-black light-blue-border "><p class="time-font-size-portal ">Disciplina</p></div>
+                              <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                              <div class="heading-portal d-flex main-heading-portal bg-light color-black orange-portal "><p class="time-font-size-portal ">Disciplina</p></div>
+                              <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                              <div class="heading-portal d-flex main-heading-portal bg-light color-black blue-portal "><p class="time-font-size-portal ">Disciplina</p></div> 
+                              <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                             
+                            </div>
+                            <!-- 9 end -->
+                                <!-- 10 -->
+                                <div class="row row-height-portal">
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal1 color-black"></p></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                
+                      
+                                </div>
+                                <!-- 10 end -->
+                                      <!-- 11 -->
+                                      <div class="row row-height-portal">
+                           
+                                        <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                                        
+                                     
+                                        <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                                      
+                                        <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                                     
+                                        <div class="heading-portal d-flex main-heading-portal  color-black "><p class="time-font-size-portal "></p></div>
+                                        <div class="heading-portal d-flex main-heading-portal bg-light color-black bottom-border-portal "><p class="time-font-size-portal ">Disciplina</p></div>
+                                        <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                                        <div class="heading-portal d-flex main-heading-portal bg-light color-black blue-portal "><p class="time-font-size-portal ">Disciplina</p></div>
+                                       
+                                      </div>
+                                      <!-- 11 end -->
+                                            <!-- 12 -->
+                                <div class="row row-height-portal">
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal1 color-black"></p></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                  <div class="heading-portal d-flex main-heading-portal"></div>
+                                
+                      
+                                </div>
+                                <!-- 12 end -->
+                                     <!-- 13 -->
+                                     <div class="row row-height-portal">
+                           
+                                      <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                                      
+                                   
+                                      <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                                      <div class="heading-portal d-flex main-heading-portal bg-light color-black blue-portal "><p class="time-font-size-portal ">Disciplina</p></div>
+                                    
+                                      <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                                   
+                                      <div class="heading-portal d-flex main-heading-portal  color-black "><p class="time-font-size-portal "></p></div>
+                                      
+                                      <div class="heading-portal d-flex main-heading-portal bg-light color-black purple-border "><p class="time-font-size-portal ">Disciplina</p></div>
+                                      <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                                    
+                                     
+                                    </div>
+                                    <!-- 13 end -->
+                                        <!-- 14 -->
+                                        <div class="row row-height-portal">
+                                          <div class="heading-portal d-flex main-heading-portal bg-light color-black purple-border "><p class="time-font-size-portal ">Disciplina</p></div>
+                           
+                                          <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                                          
+                                       
+                                          <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                                          <div class="heading-portal d-flex main-heading-portal  color-black  "><p class="time-font-size-portal "></p></div>
+                                        
+                                          <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                                       
+                                          <div class="heading-portal d-flex main-heading-portal  color-black "><p class="time-font-size-portal "></p></div>
+                                          
+                                          <div class="heading-portal d-flex main-heading-portal  color-black  "><p class="time-font-size-portal "></p></div>
+                                          <div class="heading-portal d-flex main-heading-portal"><p class="time-font-size-portal"></p></div>
+                                        
+                                         
+                                        </div>
+                                        <!-- 14 end -->
+                                       
+                                      
+                </div>
+              </div>
+               <div class="row pt-4 pb-5">
+                <div class="col-md-9 col-lg-9 col-sm-12  pt-2 pb-2 pl-3">
+                  <div class="d-flex justify-content-around flex-nowrap">
+                    <div class="d-flex"><span class="dot"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
+                    <div class="d-flex"><span class="dot1"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
+                    <div class="d-flex"><span class="dot2"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
+                    <div class="d-flex"><span class="dot3"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
+                    <div class="d-flex"><span class="dot4"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
+                  </div>
+                </div>
+              </div>
+            
+  </body>
+ 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="./Assets/js/calendar.js"></script>
+    <script src="./Assets/js/calender1.js"></script>
+       <script src="./Assets/js/popup.js"></script>
+       <script src="./Assets/js/Routes.min.js"></script>
+  <!-- bower:js -->
+  <script src='bower_components/jquery/dist/jquery.js'></script>
+  <script src='bower_components/angular/angular.js'></script>
+  <script src='bower_components/bootstrap/dist/js/bootstrap.js'></script>
+  <script src='bower_components/angular-bootstrap/ui-bootstrap-tpls.js'></script>
+  <script src='bower_components/angular-animate/angular-animate.js'></script>
+  <script src='bower_components/angular-sanitize/angular-sanitize.js'></script>
+  <script src='bower_components/angular-cookies/angular-cookies.js'></script>
+  <script src='bower_components/angular-messages/angular-messages.js'></script>
+  <script src='bower_components/angular-ui-router/release/angular-ui-router.js'></script>
+  <script src='bower_components/toastr/toastr.js'></script>
+  <script src='bower_components/angular-input-masks/angular-input-masks-standalone.js'></script>
+  <script src='bower_components/angular-translate/angular-translate.js'></script>
+  <script src='bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js'></script>
+  <script src='bower_components/components-configuration/components.js'></script>
+  <!-- endbower -->
+  <script src='src/calendar-weekly-view-portal.module.js'></script>
+  <script src='src/calendar-weekly-view-portal/calendar-weekly-view-portal.service.js'></script> 
+  <!-- <script src="calendar-weekly-view-portal.js"></script>     -->
+  <!-- <script src="calendar-weekly-view-portal.min.js"></script>    -->
+  <script id="__bs_script__">
+    //<![CDATA[
+      document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
+    //]]>
+  </script>
+  <script>
+    
+    (function(){
+   
+    
+      angular
+        .module('calendar-weekly-view-portal-tpl-html',['tb.components.calendar-weekly-view-portal'])
+        .controller('AppCtrl', ['$scope', 'CalendarWeeklyViewPortalModalService', function($scope, CalendarWeeklyViewPortalModalService){
+          
+          var vm = this;
+
+          var contentModal = {
+            anyProperty : 'The modal will receive the object that you build'
+          }
+  
+          vm.calendarWeeklyViewPortalService = function($event){
+            CalendarWeeklyViewPortalModalService.calendarWeeklyViewPortal(contentModal).then(function(modalClosedReturn){
+            });
+          }
+        }]);
+    }());
+  </script>
+</html>

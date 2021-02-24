@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="" data-ng-app="calendar-monthly-view-portal-tpl-html">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendar-Monthly-View-Portal</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="./Assets/css/sidebar.css">
+  <link rel="stylesheet" href="Assets/css/navbar.css">
+<link rel="stylesheet" href="./Assets/css/Popup.css">
+
+<link rel="stylesheet" href="./Assets/css/longReport.css">
+<link rel="stylesheet" href="Assets/css/index.css">
+<link rel="stylesheet" href="./Assets/css/calendar.css">
+<link rel="stylesheet" href="./Assets/css/page.css">
+<link rel="stylesheet" href="./Assets/css/task.css">
+<link rel="stylesheet" href="./Assets/css/monthly.css">
+<script src="./Assets/js/page.js"></script>
+
+
+  </head>
+ 
+
+  <body  >
+
+                  <div class="row pt-4">
+                <div class="col-md-3 col-lg-3 col-sm-12 pt-1">
+                  <h5 class="a-date selected-change"></h5>
+                </div>
+              
+                <div class="col-md-2 col-lg-2 col-sm-2 a-colorBlue-portal bg-white a-borderRadius-portal   col-lg-portal ml-auto">
+               <div class="top-heading-portal  ">
+                <h6 class="top-heading-padding-portal top-heading-bottom-border-portal"><a class="text-decoration font-weight-bold" href="#!/Calender_daily">Dia</a></h6>
+               </div>
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-2 a-colorBlue-portal bg-light a-borderRadius-portal col-lg-portal" >
+                 <div class="top-heading-portal ">
+                   <h6 class="top-heading-padding-portal"><a class="text-decoration" href="#!/calender_Weakly">Semana</a></h6>
+                 </div>
+                 </div>
+                 <div class="col-md-2 col-lg-2 col-sm-2 a-colorBlue-portal bg-light a-borderRadius-portal  col-lg-portal">
+                 <div class="top-heading-portal"> <h6 class="top-heading-padding-portal"><a class="text-decoration" href="#!/calender_Monthly">Mês</a></h6></div>
+                 </div>
+                 <div class="col-md-2 col-lg-2 col-sm-2 a-colorBlue-portal bg-light a-borderRadius-portal  col-lg-portal">
+                  <div class="top-heading-portal"><h6 class="top-heading-padding-portal"><a class="text-decoration" href="#!/calender_yearly">Ano</a></h6></div>
+                 </div>
+              
+              
+              </div>
+     
+     
+              
+           
+             
+                 
+            
+             
+                   <div class="row mt-3">
+                     <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal col-lg-2-portal">
+                       <div class="">
+                     <div class="text-center height-60-portal"><p>Domingo</p></div>
+                         
+                     
+                      </div>  
+                     </div>
+                     <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal col-lg-2-portal">
+                       <div class="">
+                      <div class="text-center height-60-portal"><p>Segunda-feira</p></div>
+             
+                      </div> 
+                     </div>
+             
+                     <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal col-lg-2-portal">
+                       <div class="">
+                     <div class="text-center height-60-portal"><p>Terça-feira</p></div>
+                         
+                      
+                      </div>  
+                     </div>
+             
+                     <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal col-lg-2-portal">
+                       <div class="">
+                     <div class="text-center height-60-portal"><p>Quatra-feira</p></div>
+                         
+                     
+                      </div>  
+                     </div>
+             
+                     <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal col-lg-2-portal">
+                       <div class="">
+                     <div class="text-center height-60-portal"><p>Quinta-feira</p></div>
+                         
+                      
+                      </div>  
+                     </div>
+             
+                     <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal col-lg-2-portal">
+                       <div class="">
+                     <div class="text-center height-60-portal "><p>Sexta-feira</p></div>
+                         
+                     
+                      </div>  
+                     </div>
+             
+                     <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal col-lg-2-portal">
+                       <div class="">
+                     <div class="text-center height-60-portal"><p>Sábado</p></div>
+                         
+                     
+                      </div>  
+                     </div>
+                   
+     
+     
+     
+     
+     
+     
+                   </div>
+                   <div class="row">
+                     <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+         
+                       <div class="row">
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                         
+         
+                          <div class="pl-4 pr-3 pt-4 height-100-portal">
+                           <p>26 Aogost</p>
+                           
+                           <div id="main0"></div>
+                           
+                          </div>
+         
+                          </div> 
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>27</p>
+                           
+                           <div id="main1"></div>
+         
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>28</p>
+                           
+                           <div id="main2"></div>
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>28</p>
+                           
+                          </div>
+         
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>30</p>
+                           <div id="main3"></div>
+                          
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>31</p>
+                        
+                          </div>
+                          </div>  
+                         </div>
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                         
+         
+                          <div class="pl-3 pr-3 pt-4 height-100-portal">
+                           <p>1 Sep</p>
+         
+                           <div id="main4"></div>
+                           
+                          </div>
+         
+                          </div> 
+                         </div>
+                      
+                       </div>
+         
+         
+         
+                       
+                       <div class="row">
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                         
+         
+                          <div class="pl-4 pr-3 pt-4 bg-gray-portal height-100-portal">
+                           <p>2</p>
+         
+                         
+                           
+                          </div>
+         
+                          </div> 
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>3</p>
+                           
+                           <div id="main5"></div>
+         
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>4</p>
+                           
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>5</p>
+                           <div id="main6"></div>
+                           
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>6</p>
+                           
+                           <div id="main7"></div>
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>7</p>
+                           
+                          </div>
+                          </div>  
+                         </div>
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>8</p>
+                           
+                          </div>
+                          </div>  
+                         </div>
+                       </div>
+         
+         
+                       <div class="row">
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                         
+         
+                          <div class="pl-4 pr-3 pt-4 height-100-portal">
+                           <p>9</p>
+         
+                           <div id="main8"></div>
+                           
+                          </div>
+         
+                          </div> 
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>10</p>
+                           
+                           <div id="main9"></div>
+         
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>11</p>
+                           
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>12</p>
+                           <div id="main10"></div>
+                           
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>13</p>
+                          
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>14</p>
+                           <div id="main11"></div>
+                        
+                          </div>
+                          </div>  
+                         </div>
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal bg-gray-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 ">
+                           <p>15</p>
+                          
+                        
+                          </div>
+                          </div>  
+                         </div>
+                       </div>
+         
+         
+         
+         
+                       <div class="row">
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                         
+         
+                          <div class="pl-4 pr-3 pt-4 height-100-portal">
+                           <p>16</p>
+         
+                           <div id="main12"></div>
+                           
+                          </div>
+         
+                          </div> 
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>17</p>
+                           
+                           <div id="main13"></div>
+         
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>18</p>
+                           
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>19</p>
+                           <div id="main14"></div>
+                           
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>20</p>
+                           <div id="main15"></div>
+                          
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>21</p>
+                        
+                          </div>
+                          </div>  
+                         </div>
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>22</p>
+                        
+                          </div>
+                          </div>  
+                         </div>
+                       </div>
+                       <div class="row">
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                         
+         
+                          <div class="pl-4 pr-3 pt-4 height-100-portal">
+                           <p>23</p>
+         
+                           <div id="main16"></div>
+                           
+                          </div>
+         
+                          </div> 
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>24</p>
+                           
+                           <div id="main17"></div>
+         
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>25</p>
+                           
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>26</p>
+                           <div id="main18"></div>
+                           
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>27</p>
+                           <div id="main19"></div>
+                          
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>28</p>
+                        
+                          </div>
+                          </div>  
+                         </div>
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>29</p>
+                        
+                          </div>
+                          </div>  
+                         </div>
+                       </div>
+                       <div class="row">
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                         
+         
+                          <div class="pl-4 pr-3 pt-4 height-100-portal">
+                           <p>30</p>
+         
+                           <div id="main20"></div>
+                           
+                          </div>
+         
+                          </div> 
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>1 Oct</p>
+                           
+                           <div id="main21"></div>
+         
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>2</p>
+                           
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>3</p>
+                           <div id="main22"></div>
+                           
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3">
+                           <p>4</p>
+                           <div id="main23"></div>
+                          
+                          </div>
+                          </div>  
+                         </div>
+         
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>5</p>
+                        
+                          </div>
+                          </div>  
+                         </div>
+                         <div class="col-lg-2 col-md-2 col-sm-2 border p-0 col-lg-2-portal">
+                           <div class="">
+                        
+                             
+                          <div class="pl-3 pt-4 pr-3 bg-gray-portal height-100-portal">
+                           <p>6</p>
+                        
+                          </div>
+                          </div>  
+                         </div>
+                       </div>
+         
+         
+         
+         
+         
+         
+         
+                       
+         
+         
+                     </div>
+                   </div>
+             
+                
+                 <!--/.First slide-->
+             
+              
+             
+             
+     
+     
+              
+     
+     
+     
+               <div class="row pt-4 pb-5">
+                 <div class="col-md-9 col-lg-9 col-sm-12  pt-2 pb-2 pl-3">
+                   <div class="d-flex justify-content-around flex-nowrap">
+                     <div class="d-flex"><span class="dot"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
+                     <div class="d-flex"><span class="dot1"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
+                     <div class="d-flex"><span class="dot2"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
+                     <div class="d-flex"><span class="dot3"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
+                     <div class="d-flex"><span class="dot4"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
+                   </div>
+                 </div>
+               </div>
+             
+  </body>
+  <script>
+    let html;
+  
+    let arr = [1,2,3,4,4,4,4,4,4,4,1,2,3,4,4,4,4,4,4,4,1,2,3,4,4,4,4,4,4,4,3,5,2,3,2,3];
+    arr.map((item, index) => {
+        let rand = Math.floor(Math.random() * 8) + 1;
+        html = ` <div class="progress progress-portal mt-4" >
+        <div class="progress-bar border-rad-5-portal" role="progressbar" style="width:${Math.floor(Math.random() * 20) + 8}%,color:white" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        <div class="progress-bar border-rad-5-portal bg-danger" role="progressbar" style="width:${Math.floor(Math.random() * 20) + 8}%" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        <div class="progress-bar border-rad-5-portal" role="progressbar" style="width:${Math.floor(Math.random() * 20) + 1}%" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        <div class="progress-bar border-rad-5-portal bg-success" role="progressbar" style="width:${Math.floor(Math.random() * 20) + 8}%" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        <div class="progress-bar border-rad-5-portal" role="progressbar" style="width:${Math.floor(Math.random() * 20) + 8}%" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        <div class="progress-bar border-rad-5-portal " role="progressbar" style="width:${Math.floor(Math.random() * 20) + 8}%" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        <div class="progress-bar border-rad-5-portal" role="progressbar" style="width:${Math.floor(Math.random() * 20) + 8}%" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        <div class="progress-bar border-rad-5-portal bg-dark" role="progressbar" style="width:${Math.floor(Math.random() * 20) + 8}%" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        <div class="progress-bar border-rad-5-portal" role="progressbar" style="width:${Math.floor(Math.random() * 20) + 8}%" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        <div class="progress-bar border-rad-5-portal" role="progressbar" style="width:${Math.floor(Math.random() * 20) + 8}%" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>`
+    document.getElementById(`main${index}`).innerHTML =html
+    
+        html = html + html
+    })
+  
+    </script>
+  <script src="./Assets/js/nabvar.js"></script>
+    <script src="./Assets/js/sidebar.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="./Assets/js/calendar.js"></script>
+    <script src="./Assets/js/calender1.js"></script>
+       <script src="./Assets/js/popup.js"></script>
+  <!-- bower:js -->
+  <script src='bower_components/jquery/dist/jquery.js'></script>
+  <script src='bower_components/angular/angular.js'></script>
+  <script src='bower_components/bootstrap/dist/js/bootstrap.js'></script>
+  <script src='bower_components/angular-bootstrap/ui-bootstrap-tpls.js'></script>
+  <script src='bower_components/angular-animate/angular-animate.js'></script>
+  <script src='bower_components/angular-sanitize/angular-sanitize.js'></script>
+  <script src='bower_components/angular-cookies/angular-cookies.js'></script>
+  <script src='bower_components/angular-messages/angular-messages.js'></script>
+  <script src='bower_components/angular-ui-router/release/angular-ui-router.js'></script>
+  <script src='bower_components/toastr/toastr.js'></script>
+  <script src='bower_components/angular-input-masks/angular-input-masks-standalone.js'></script>
+  <script src='bower_components/angular-translate/angular-translate.js'></script>
+  <script src='bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js'></script>
+  <script src='bower_components/components-configuration/components.js'></script>
+  <!-- endbower -->
+  <script src='src/calendar-monthly-view-portal.module.js'></script>
+  <script src='src/calendar-monthly-view-portal/calendar-monthly-view-portal.service.js'></script> 
+  <!-- <script src="calendar-monthly-view-portal.js"></script>     -->
+  <!-- <script src="calendar-monthly-view-portal.min.js"></script>    -->
+  <script id="__bs_script__">
+    //<![CDATA[
+      document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
+    //]]>
+  </script>
+  <script>
+    (function(){
+        angular
+        .module('calendar-monthly-view-portal-tpl-html',['tb.components.calendar-monthly-view-portal'])
+        .controller('AppCtrl', ['$scope', 'CalendarMonthlyViewPortalService', function($scope, CalendarMonthlyViewPortalService){
+          
+          var vm = this;
+
+          var contentModal = {
+            anyProperty : 'The modal will receive the object that you build'
+          }
+  
+          vm.responsavelAssistenteService = function($event){
+            CalendarMonthlyViewPortalService.calendarMonthlyViewPortal(contentModal).then(function(modalClosedReturn){
+            });
+          }
+        }]);
+    }());
+  </script>
+</html>

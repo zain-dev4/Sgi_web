@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsavel Assistente</title>
+    <!-- bower:css -->
+    <!-- <link r el="stylesheet" href="bower_components/toastr/toastr.css" />
+    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" /> -->
+    <!-- <link rel="stylesheet" href="css/responsavel-assistente.css" /> -->
+    <!-- endbower -->
+    <!-- Bootstrap CSS -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>  
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link rel="stylesheet" href="./Assets/css/longReport.css">
+<link rel="stylesheet" href="Assets/css/index.css">
+<link rel="stylesheet" href="./Assets/css/calendar.css">
+
+
+
+  </head>
+ 
+
+  <body  >
+   
+
+          <div class="row justify-portal mb-3">
+            
+
+            <div class="maxwidth-17-portal">
+              <div class="input-group ">
+                <input  type="text" class="form-control text-center" placeholder="Categoria"
+                  aria-label="Text input with dropdown button">
+                <div class="input-group-append">
+                  <button  class="btn bg-dropdown-Portal dropdown-toggle text-white" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"  onclick=" populateSelect()"></button>
+                  <div class="dropdown-menu" >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="maxwidth-17-portal">
+              <div class="input-group ">
+                <input type="text" class="form-control text-center " placeholder="Curso"
+                  aria-label="Text input with dropdown button">
+                <div class="input-group-append">
+                  <button class="btn bg-dropdown-Portal dropdown-toggle text-white" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="maxwidth-17-portal">
+              <div class="input-group ">
+                <input type="text" class="form-control text-center " placeholder="Serie"
+                  aria-label="Text input with dropdown button">
+                <div class="input-group-append">
+                  <button class="btn bg-dropdown-Portal dropdown-toggle text-white" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="maxwidth-17-portal">
+              <div class="input-group ">
+                <input type="text" class="form-control text-center " placeholder="Turma"
+                  aria-label="Text input with dropdown button">
+                <div class="input-group-append">
+                  <button class="btn bg-dropdown-Portal dropdown-toggle text-white" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            
+            <div class="maxwidth-17-portal">
+              <div class="input-group ">
+                <input type="text" class="form-control text-center " placeholder="Disciplina"
+                  aria-label="Text input with dropdown button">
+                <div class="input-group-append">
+                  <button class="btn bg-dropdown-Portal dropdown-toggle text-white" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+          <div class="">
+            <h4>Comunicados</h4>
+            <textarea rows="10" class="bg-light width-text-box-portal"  placeholder="Digite aqui">
+                  </textarea>
+            <br>
+
+
+            <button class="btn btn-default"><i class="fa  fa-picture-o"></i></button>
+            <button class="btn btn-default"><i class="fa  fa-link"></i></button>
+
+            <button class="btn btn-success float-right ">Enviar</button>
+          </div>
+          <div class="row mt-3 border-bottom border-dark">
+            <div class="col-md-12">
+              <h4>Alimentação</h4>
+            </div>
+            <div class="col-md-7 mb-4 ">
+              <div class="row">
+                <div class="col-md-6  border-right border-dark  m-0 p-0">
+                  <h6 class="text-center text-danger pl-5"> Tudo</h6>
+                  <div class="row  border-dark border-bottom m-0 p-0">
+                    <div class="col-md-3 col-sm-3 col-3">
+                      <b class="text-left text-danger">Suco</b>
+                    </div>
+                    <div class="col-md-4 col-4 col-sm-4 text-right">
+                      <input id="m1" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m1"><b>M</b></label>
+                    </div>
+                    <div class="col-md-5 col-5 col-sm-5  text-left">
+                      <input id="inpLock-portal-1" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-1"><b>T</b></label>
+                    </div>
+                  </div>
+                  <!-- 2nd row  -->
+                  <div class="row border-dark border-bottom m-0 p-0">
+                    <div class="col-md-3 col-sm-3 col-3">
+                      <b class="text-left text-danger">Fruta</b>
+                    </div>
+                    <div class="col-md-4 col-4 col-sm-4 text-right">
+                      <input id="m2" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m2"><b>M</b></label>
+                    </div>
+                    <div class="col-md-5 col-5 col-sm-5  text-left">
+                      <input id="inpLock-portal-2" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-2"><b>T</b></label>
+                    </div>
+                  </div>
+                  <!-- 3rd row  -->
+                  <div class="row border-dark border-bottom m-0 p-0">
+                    <div class="col-md-3 col-sm-3 col-3">
+                      <b class="text-left text-danger">Lanche</b>
+                    </div>
+                    <div class="col-md-4 col-4 col-sm-4 text-right">
+                      <input id="m3" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m3"><b>M</b></label>
+                    </div>
+                    <div class="col-md-5 col-5 col-sm-5  text-left">
+                      <input id="inpLock-portal-3" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-3"><b>T</b></label>
+                    </div>
+                  </div>
+                  <!-- 4rth row  -->
+                  <div class="row border-dark border-bottom m-0 p-0">
+                    <div class="col-md-3 col-sm-3 col-3">
+                      <b class="text-left  text-danger">Almoco</b>
+                    </div>
+                    <div class="col-md-4 col-4 col-sm-4 text-right">
+                      <input id="m4" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m4"><b>M</b></label>
+                    </div>
+                    <div class="col-md-5 col-5 col-sm-5  text-left">
+                      <input id="inpLock-portal-4" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-4"><b>T</b></label>
+                    </div>
+                  </div>
+                  <!-- 5th row  -->
+                  <div class="row  m-0 p-0">
+                    <div class="col-md-3 col-sm-3 col-3">
+                      <b class="text-left text-danger">Mamadeiro</b>
+                    </div>
+                    <div class="col-md-4 col-4 col-sm-4 text-right">
+                      <input id="m5" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m5"><b>M</b></label>
+                    </div>
+                    <div class="col-md-5 col-5 col-sm-5  text-left">
+                      <input id="inpLock-portal-5" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-5"><b>T</b></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 border-right border-dark  m-0 p-0 ">
+                  <h6 class="text-center text-danger">Parte</h6>
+                  <!-- first row  -->
+                  <div class="row border-dark border-bottom m-0 p-0">
+
+
+                    <div class="col-md-6 col-6 col-sm-6 text-right">
+                      <input id="m6" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m6"><b>M</b></label>
+                    </div>
+                    <div class="col-md-6 col-6 col-sm-6  text-left">
+                      <input id="inpLock-portal-6" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-6"><b>T</b></label>
+                    </div>
+                  </div>
+                  <!-- second row  -->
+                  <div class="row border-dark border-bottom m-0 p-0">
+
+
+                    <div class="col-md-6 col-6 col-sm-6 text-right">
+                      <input id="m7" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m7"><b>M</b></label>
+                    </div>
+                    <div class="col-md-6 col-6 col-sm-6  text-left">
+                      <input id="inpLock-portal-7" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-7"><b>T</b></label>
+                    </div>
+                  </div>
+                  <!-- 3rd row  -->
+                  <div class="row border-dark border-bottom m-0 p-0">
+
+
+                    <div class="col-md-6 col-6 col-sm-6 text-right">
+                      <input id="m8" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m8"><b>M</b></label>
+                    </div>
+                    <div class="col-md-6 col-6 col-sm-6  text-left">
+                      <input id="inpLock-portal-8" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-8"><b>T</b></label>
+                    </div>
+                  </div>
+                  <!-- 4th row  -->
+                  <div class="row border-dark border-bottom m-0 p-0">
+
+
+                    <div class="col-md-6 col-6 col-sm-6 text-right">
+                      <input id="m9" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m9"><b>M</b></label>
+                    </div>
+                    <div class="col-md-6 col-6 col-sm-6  text-left">
+                      <input id="inpLock-portal-9" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-9"><b>T</b></label>
+                    </div>
+                  </div>
+                  <!-- 5th row  -->
+                  <div class="row m-0 p-0">
+
+
+                    <div class="col-md-6 col-6 col-sm-6 text-right">
+                      <input id="m10" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m10"><b>M</b></label>
+                    </div>
+                    <div class="col-md-6 col-6 col-sm-6  text-left">
+                      <input id="inpLock-portal-10" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-10"><b>T</b></label>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-3 border-dark m-0 p-0 ">
+                  <h6 class="text-center text-danger">Rejeitou</h6>
+                  <!-- 1strow  -->
+                  <div class="row border-dark border-bottom m-0 p-0">
+
+
+                    <div class="col-md-6 col-6 col-sm-6 text-right">
+                      <input id="m11" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m11"><b>M</b></label>
+                    </div>
+                    <div class="col-md-6 col-6 col-sm-6  text-left">
+                      <input id="inpLock-portal-11" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-11"><b>T</b></label>
+                    </div>
+                  </div>
+                  <!-- 2nd row  -->
+                  <div class="row border-dark border-bottom m-0 p-0">
+
+
+                    <div class="col-md-6 col-6 col-sm-6 text-right">
+                      <input id="m12" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m12"><b>M</b></label>
+                    </div>
+                    <div class="col-md-6 col-6 col-sm-6  text-left">
+                      <input id="inpLock-portal-12" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-12"><b>T</b></label>
+                    </div>
+                  </div>
+                  <!-- 3rd row  -->
+                  <div class="row border-dark border-bottom m-0 p-0">
+
+
+                    <div class="col-md-6 col-6 col-sm-6 text-right">
+                      <input id="m13" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m13"><b>M</b></label>
+                    </div>
+                    <div class="col-md-6 col-6 col-sm-6  text-left">
+                      <input id="inpLock-portal-13" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-13"><b>T</b></label>
+                    </div>
+                  </div>
+                  <!-- 4th row  -->
+                  <div class="row border-dark border-bottom m-0 p-0">
+
+
+                    <div class="col-md-6 col-6 col-sm-6 text-right">
+                      <input id="m14" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m14"><b>M</b></label>
+                    </div>
+                    <div class="col-md-6 col-6 col-sm-6  text-left">
+                      <input id="inpLock-portal-14" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-14"><b>T</b></label>
+                    </div>
+                  </div>
+                  <!-- 5th row  -->
+                  <div class="row m-0 p-0">
+
+
+                    <div class="col-md-6 col-6 col-sm-6 text-right">
+                      <input id="m15" type="checkbox" value="1" />
+                      <label class="m1-btn text-center" for="m15"><b>M</b></label>
+                    </div>
+                    <div class="col-md-6 col-6 col-sm-6  text-left">
+                      <input id="inpLock-portal-15" type="checkbox" value="1" />
+                      <label class="btn-lock text-center" for="inpLock-portal-15"><b>T</b></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-5 col-md-5  ">
+                <h4 h4 class="text-left ">Sono/Aluno</h4>
+                <div class="col-12 col-sm-12 col-md-12 m-0 p-0">
+                  <div class=" border-suno-portal">
+                    <label for="" class="dormiuode-portal">Dormiuo de:</label>
+                    <input type="text"name="dormiede" class="remove-border-portal" >
+                    <label for="" class="dormiuode-portal">as</label>
+                    <input type="text"name="dormiede"  class="remove-border-portal">
+
+                  </div>
+                  <div class=" border-suno-portal m-0 p-0">
+                    <label for="" class="dormiuode-portal">Dormiuo de:</label>
+                    <input type="text"name="dormiede" class="remove-border-portal" >
+                    <label for="" class="dormiuode-portal">as</label>
+                    <input type="text"name="dormiede"  class="remove-border-portal">
+
+                  </div>
+                  <div class="mt-3">
+                    <button class="btn-check-portal">    
+                      <div class="row  m-0 p-2">
+                      <div class="col-md-2 col-sm-2 col-2">
+                        <b class="text-left text-white">banho </b>
+                      </div>
+                      <div class="col-md-4 col-4 col-sm-4 text-right">
+                        <input id="input-check-portal-for-btn-label" type="checkbox" value="1" />
+                        <label class="input-check-portal-for-btn text-center" for="input-check-portal-for-btn-label"><b>S</b></label>
+                      </div>
+                      <div class="col-md-4 col-4 col-sm-4  text-left">
+                        <input id="inp-btn-inner-portal" type="checkbox" value="1" />
+                        <label class="input-check-portal-for-btn text-center" for="inp-btn-inner-portal"><b>N</b></label>
+                      </div>
+                    </div></button>
+                  </div>
+               
+                </div>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-md-6 p-0 pt-2 ">
+           
+            <div class="row  m-0 p-2 ">
+              <div class="col-md-2 col-sm-2 col-2">
+                <h4 class="text-left text-danger">Evacoacao:</h4>
+              </div>
+              <div class="col-md-4 col-4 col-sm-4 text-right">
+                <input id="m16" type="checkbox" value="1" />
+                <label class="m1-btn text-center" for="m16"><b>M</b></label>
+                
+              </div>
+              <div class="col-md-5 col-5 col-sm-5 d-flex text-left ">
+                <div>
+                <input id="inpLock-portal-16" type="checkbox" value="1" />
+                <label class="btn-lock text-center" for="inpLock-portal-16"><b>T</b></label>
+              </div>
+                <div class=" ml-4 border-suno-portal  ">   
+                  <input type="text"name="dormiede" class="remove-border-portal" >
+                </div>
+                  <div class="checktop-portal">x</div>
+              </div>
+              
+              </div>
+              <div class="row mt-2 p-3  ">
+                <div class="col-md-4 d-flex">
+                  <input id="m20" type="checkbox" value="1" />
+                  <label class="m1-btn text-center" for="m20"></label><p>Normal</p>
+                </div>
+                <div class="col-md-4 d-flex">
+                  <input id="m21" type="checkbox" value="1" />
+                  <label class="m1-btn text-center" for="m21"></label><p>Pastoso</p>
+                </div>
+                <div class="col-md-4 d-flex">
+                  <input id="m22" type="checkbox" value="1" />
+                  <label class="m1-btn text-center" for="m22"></label><p>Liquido</p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-2">
+                  <h4 class="text-left text-danger">Ciente:</h4>
+                </div>
+                <div class="col-md-10 col-10 col-sm-10 text-left">
+                  <input id="m23" type="checkbox" value="1" />
+                  <label class="m1-btn text-center" for="m23"><b>S</b></label>
+                  
+                </div>
+              </div>
+             
+              
+        </div>
+        <div class="col-md-6 p-0 pt-2 ">
+          <div class="row  m-0 p-2 ">
+            <div class="col-md-4 col-sm-4 col-4">
+              <h4 class="text-left text-danger">Medicamendo:</h4>
+            </div>
+            <div class="col-md-4 col-4 col-sm-4 text-right">
+              <input id="m18" type="checkbox" value="1" />
+                  <label class="m1-btn text-center" for="m18"><b>S</b></label>
+              
+            </div>
+            <div class="col-md-3 col-3 col-sm-3 d-flex text-left ">
+              <div>
+                <input id="m19" type="checkbox" value="1" />
+                <label class="m1-btn text-center" for="m19"><b>N</b></label>
+            </div>
+            <div class="border-suno-portal  ">   
+              <input type="text"name="dormiede" class="remove-border-last-portal" >
+            </div>
+              <div class="checktop-portal">h</div>
+                <div class="border-suno-portal  ">   
+                <input type="text"name="dormiede" class="remove-border-last-portal" >
+              </div>
+                <div class="checktop-portal">h</div>
+            </div>
+            
+            </div>
+            <div class="row">
+              <div class="col-7 col-md-7">
+                <div class="border-suno-portal  ">   
+                  <label class="checktop-portal">h</label> 
+                  <input type="text"name="dormiede" class="remove-border-last-portal w-50" >
+                  <label class="checktop-portal">c</label>
+                  <input type="text"name="dormiede" class="remove-border-last-portal" >
+                 
+                </div>
+                
+              </div>
+              <div class="col-4 col-md-4">
+                <div class="border-suno-portal w-113-portal ">   
+                  <label class="checktop-portal">dose</label> 
+                  <input type="text"name="dormiede" class="remove-border-last-portal w-50" >
+                 
+                </div>
+                
+              </div>
+            </div>
+         
+         </div>
+           
+        </div>
+     
+  
+  <script>
+    function showOrHideDiv() {
+      var v = document.getElementById("show");
+      var icon = document.getElementById("icon1");
+      if (v.style.display === "block") {
+        v.style.display = "none";
+      
+
+        icon.style.transform = "rotate(360deg)";
+        console.log("open");
+      } else {
+        v.style.display = "block";
+        icon.style.transform = "rotate(180deg)";
+      
+
+        console.log("close");
+      }
+    }
+
+</script>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+  <script src="./Assets/js/calendar.js"></script>
+  <script src="./Assets/js/calender1.js"></script>
+     <script src="./Assets/js/popup.js"></script>
+  </body>
+    <script>
+      function showOrHideDiv() {
+        var v = document.getElementById("show");
+        var icon = document.getElementById("icon1");
+        if (v.style.display === "block") {
+          v.style.display = "none";
+        
+  
+          icon.style.transform = "rotate(360deg)";
+          console.log("open");
+        } else {
+          v.style.display = "block";
+          icon.style.transform = "rotate(180deg)";
+        
+  
+          console.log("close");
+        }
+      }
+      
+  // This answer is not useful
+  // I'm surprised no one mentioned document.querySelectorAll(). Pure JavaScript solution, works in IE9+.
+  
+  // function toggle(source) {
+  //     var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  //     for (var i = 0; i < checkboxes.length; i++) {
+  //         if (checkboxes[i] != source)
+  //             checkboxes[i].checked = source.checked;
+  //     }
+  // }
+  
+  </script>
+  
+    <script language="JavaScript">
+  function toggle(source) {
+    checkboxes = document.getElementsByName('checkallname');
+    for(var i=0, n=checkboxes.length;i<n;i++) {
+      checkboxes[i].checked = source.checked;
+    }
+  }
+  function toggle1(source) {
+    checkboxes1 = document.getElementsByName('firstRow');
+    for(var i=0, n=checkboxes1.length;i<n;i++) {
+      checkboxes1[i].checked = source.checked;
+    }
+  }
+  function toggle2(source) {
+    checkboxes2 = document.getElementsByName('secondRow');
+    for(var i=0, n=checkboxes2.length;i<n;i++) {
+      checkboxes2[i].checked = source.checked;
+    }
+  }
+  function toggle3(source) {
+    checkboxes3 = document.getElementsByName('thirdRow');
+    for(var i=0, n=checkboxes3.length;i<n;i++) {
+      checkboxes3[i].checked = source.checked;
+    }
+  }
+  function toggle4(source) {
+    checkboxes4 = document.getElementsByName('fourthRow');
+    for(var i=0, n=checkboxes4.length;i<n;i++) {
+      checkboxes4[i].checked = source.checked;
+    }
+  }
+  function toggle5(source) {
+    checkboxes5 = document.getElementsByName('fifthRow');
+    for(var i=0, n=checkboxes5.length;i<n;i++) {
+      checkboxes5[i].checked = source.checked;
+    }
+  }
+  function toggle6(source) {
+    checkboxes6 = document.getElementsByName('sixRow');
+    for(var i=0, n=checkboxes6.length;i<n;i++) {
+      checkboxes6[i].checked = source.checked;
+    }
+  }
+  function toggle7(source) {
+    checkboxes7 = document.getElementsByName('sevenRow');
+    for(var i=0, n=checkboxes7.length;i<n;i++) {
+      checkboxes7[i].checked = source.checked;
+    }
+  }
+  function toggle8(source) {
+    checkboxes8 = document.getElementsByName('eightRow');
+    for(var i=0, n=checkboxes8.length;i<n;i++) {
+      checkboxes8[i].checked = source.checked;
+    }
+  }
+  function toggle9(source) {
+    checkboxes9 = document.getElementsByName('nineRow');
+    for(var i=0, n=checkboxes9.length;i<n;i++) {
+      checkboxes9[i].checked = source.checked;
+    }
+  }
+  function toggle10(source) {
+    checkboxes10 = document.getElementsByName('tenRow');
+    for(var i=0, n=checkboxes10.length;i<n;i++) {
+      checkboxes10[i].checked = source.checked;
+    }
+  }
+  function toggle11(source) {
+    checkboxes11 = document.getElementsByName('elevenRow');
+    for(var i=0, n=checkboxes11.length;i<n;i++) {
+      checkboxes11[i].checked = source.checked;
+    }
+  }
+  function toggle12(source) {
+    checkboxes12 = document.getElementsByName('twelveRow');
+    for(var i=0, n=checkboxes12.length;i<n;i++) {
+      checkboxes12[i].checked = source.checked;
+    }
+  }
+  function toggle13(source) {
+    checkboxes13 = document.getElementsByName('thirteenRow');
+    for(var i=0, n=checkboxes13.length;i<n;i++) {
+      checkboxes13[i].checked = source.checked;
+    }
+  }
+  function toggle14(source) {
+    checkboxes14 = document.getElementsByName('fourteenRow');
+    for(var i=0, n=checkboxes14.length;i<n;i++) {
+      checkboxes14[i].checked = source.checked;
+    }
+  }
+  function toggle15(source) {
+    checkboxes15 = document.getElementsByName('fifteenRow');
+    for(var i=0, n=checkboxes15.length;i<n;i++) {
+      checkboxes15[i].checked = source.checked;
+    }
+  }
+  function toggle16(source) {
+    checkboxes16 = document.getElementsByName('sixteenRow');
+    for(var i=0, n=checkboxes16.length;i<n;i++) {
+      checkboxes16[i].checked = source.checked;
+    }
+  }
+  function toggle17(source) {
+    checkboxes17 = document.getElementsByName('seventeenRow');
+    for(var i=0, n=checkboxes17.length;i<n;i++) {
+      checkboxes17[i].checked = source.checked;
+    }
+  }
+  function toggle18(source) {
+    checkboxes18 = document.getElementsByName('eighteenRow');
+    for(var i=0, n=checkboxes18.length;i<n;i++) {
+      checkboxes18[i].checked = source.checked;
+    }
+  }
+  function toggle19(source) {
+    checkboxes19 = document.getElementsByName('nineteenRow');
+    for(var i=0, n=checkboxes19.length;i<n;i++) {
+      checkboxes19[i].checked = source.checked;
+    }
+  }
+  function toggle20(source) {
+    checkboxes20 = document.getElementsByName('twentyRow');
+    for(var i=0, n=checkboxes20.length;i<n;i++) {
+      checkboxes20[i].checked = source.checked;
+    }
+  }
+  </script>
+  <script src="./Assets/js/nabvar.js"></script>
+    <script src="./Assets/js/sidebar.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="./Assets/js/calendar.js"></script>
+    <script src="./Assets/js/calender1.js"></script>
+       <script src="./Assets/js/popup.js"></script>
+  <!-- bower:js -->
+  <script src='bower_components/jquery/dist/jquery.js'></script>
+  <script src='bower_components/angular/angular.js'></script>
+  <script src='bower_components/bootstrap/dist/js/bootstrap.js'></script>
+  <script src='bower_components/angular-bootstrap/ui-bootstrap-tpls.js'></script>
+  <script src='bower_components/angular-animate/angular-animate.js'></script>
+  <script src='bower_components/angular-sanitize/angular-sanitize.js'></script>
+  <script src='bower_components/angular-cookies/angular-cookies.js'></script>
+  <script src='bower_components/angular-messages/angular-messages.js'></script>
+  <script src='bower_components/angular-ui-router/release/angular-ui-router.js'></script>
+  <script src='bower_components/toastr/toastr.js'></script>
+  <script src='bower_components/angular-input-masks/angular-input-masks-standalone.js'></script>
+  <script src='bower_components/angular-translate/angular-translate.js'></script>
+  <script src='bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js'></script>
+  <script src='bower_components/components-configuration/components.js'></script>
+  <!-- endbower -->
+  <script src='src/responsavel-assistente.module.js'></script>
+  <script src='src/responsavel-assistente/responsavel-assistente.service.js'></script> 
+  <!-- <script src="responsavel-assistente.js"></script>     -->
+  <!-- <script src="responsavel-assistente.min.js"></script>    -->
+  <script id="__bs_script__">
+    //<![CDATA[
+      document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
+    //]]>
+  </script>
+  <script>
+    (function(){
+        angular
+        .module('responsavel-assistente-tpl-html',['tb.components.responsavel-assistente'])
+        .controller('AppCtrl', ['$scope', 'ResponsavelAssistenteModalService', function($scope, ResponsavelAssistenteModalService){
+          
+          var vm = this;
+
+          var contentModal = {
+            anyProperty : 'The modal will receive the object that you build'
+          }
+  
+          vm.responsavelAssistenteService = function($event){
+            ResponsavelAssistenteModalService.responsavelAssistente(contentModal).then(function(modalClosedReturn){
+            });
+          }
+        }]);
+    }());
+  </script>
+</html>

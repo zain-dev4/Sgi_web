@@ -1,0 +1,168 @@
+.w-218-Z{
+    width: 228%!important;
+}
+.z-button-white{
+    background-color: WHITE;
+    color: blue;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    width: 40px;;
+}
+.z-circle-yellow{
+    padding:5px;
+    top: 11px;
+    position: absolute;
+    border-radius: 50px;
+    background-color: yellow;
+}
+.z-border-none{
+    border: navajowhite !important;
+    border-radius: 5px;
+}
+.z-badge{
+  border-radius: 100px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* padding: px; */
+    /* height: 5px; */
+    
+    border-radius: 100px;
+  
+    
+}
+.z-w-icons{
+  width: 35px;
+}
+.z-w-icons-001{
+  width: 40px;
+}
+.set-z-top{
+  top: 10px;;
+}
+.mainlogo-portal{
+  width: 126px;
+}
+.font-size-bell-icon-portal{
+  font-size: 28px;
+}
+.paddingRight-portal{
+  padding-right: 2.5%;
+  padding-left: 6%;
+}
+.dot {
+  margin-top: 2%;
+  background-color: #e62e2d;
+  height: 18px;
+  width: 18px;
+ 
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.dot1{
+  margin-top: 2%;
+  background-color: #6ddcce;
+  height: 18px;
+  width: 18px;
+ 
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.dot2{
+  margin-top: 2%;
+  background-color:#4e97ff;
+  height: 18px;
+  width: 18px;
+ 
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.dot3{
+  margin-top: 2%;
+  background-color: #4e97ff;
+  height: 18px;
+  width: 18px;
+ 
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.dot4{
+  margin-top: 2%;
+  background-color: #e97027;
+  height: 18px;
+  width: 18px;
+ 
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.time-font-size-portal{
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+}
+.justify-content-around{
+  justify-content: space-around;
+}
+.col-lg-portal{
+  max-width: 11.666667% !important;
+  cursor: pointer;
+  height: 42px;
+  
+  
+}  
+.top-heading-bottom-border-portal{
+ 
+  border-bottom: 2px solid;
+  /* font-weight: bolder; */
+
+  
+} 
+button{
+  outline: none;
+}
+input{
+  outline: none;
+}
+
+
+/* .top-heading-padding-portal:hover{
+  border-bottom: 2px solid;
+} */
+.top-heading-portal{
+ 
+  height: 42px;
+
+}
+.top-heading-padding-portal{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+
+}
+.text-decoration{
+  text-decoration: none !important;
+}
+/* .btn1-portal {
+  border: none;
+  outline: none;
+
+  background-color: #f1f1f1;
+  cursor: pointer;
+ 
+} */
+.bg-transparent{
+  background-color: none !important;
+}
+
+.light{
+  background-color: #f1f1f1;
+}

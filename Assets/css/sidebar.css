@@ -1,0 +1,51 @@
+
+    .iconSize{
+        width: 20px;
+        }
+        .iconSize1{
+            width: 26px;
+        }
+        .iconUper{
+            margin-left: auto;
+        }
+        .sidebar-padding-Portap{
+            padding-top: 25px;
+        }
+        .svg1{
+            cursor: pointer;
+           
+        }
+        #show{
+            display: block;
+        }
+        .angle-down{
+            font-size: 28px;
+            transform: rotate(360deg);
+            cursor: pointer;
+            color: #3a6cf1;
+          }
+          .iconSize-portal{
+            width: 20px;
+            }
+            .iconSize1-portal{
+                width: 22px;
+            }
+
+            
+            /*Extra Added  */
+            @media (min-width:1700px){
+                .paddingRight-portal {
+                    padding-left: 0% !important;
+                }
+                .iconUper {
+                    padding-left: 160px !important;
+                    margin-left: 0px !important; 
+                }
+                .main-heading-portal5 {
+                    width: 180px !important;
+                }
+                .heading-portal {
+                    width: 176px !important;
+                }
+            
+              }

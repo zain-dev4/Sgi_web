@@ -1,0 +1,21 @@
+.top-30{
+    margin-top: 30px;
+}
+.modal-xl{
+    width: 1170px;
+}
+.btn-rounded{
+    border-radius: 50%;
+}
+.modal-title{
+    padding-left: 15px;
+}
+.modal-title > span{
+    margin-right: 15px;
+}
+.modal-footer{
+    border-top:none; 
+}
+.modal{
+    color: #555;
+}
