@@ -8,18 +8,20 @@ app.config(function($routeProvider) {
     //   templateUrl: "view/service.html",
     // })
     .when("/calender_yearly", {
-      templateUrl: "calender_yearly.html",
+      templateUrl: "view/calender_yearly.html",
     })
     .when("/calender_Monthly", {
-      templateUrl: "calender_Month.html",
+      templateUrl: "view/calender_Month.html",
     })
     .when("/calender_Weakly", {
-      templateUrl: "calender_Weakly.html",
+      templateUrl: "view/calender_Weakly.html",
     })
     .when("/Calender_daily", {
-      templateUrl: "Calender_daily.html",
+      templateUrl: "view/Calender_daily.html",
+      controller: "firstController",
     })
     .when("/Responsavel", {
+<<<<<<< HEAD
       templateUrl: "Responsavel.html",
       controller : "responsavel"
     });
@@ -150,3 +152,44 @@ app.controller("responsavel",function($scope , $filter)
  $scope.model.selectedOccurrence = 'current';
 });
 
+=======
+      templateUrl: "view/Responsavel.html",
+    });
+  });
+  app.controller("firstController",function($scope){
+      $scope.array = [
+        {
+          time: "09:00",
+          color: "green",
+          name: "computrade",
+        },
+        {
+          time: "10:00",
+          color: "red",
+          name: "Englis",
+        },
+        {
+          time: "11:00",
+          color: "blue",
+          name: "Music",
+        },
+        {
+          time: "12:00",
+          color: "purple",
+          name: "break",
+        },
+        {
+          time: "1:00",
+          color: "yellow",
+          name: "Math",
+        },
+     
+        {
+          time: "03:00",
+          color: "",
+          name: "",
+        },
+      ];
+      console.log($scope.array);
+  })
+>>>>>>> 895059d831de67f6276d30148ce7b2f8d146cad6

@@ -17,13 +17,23 @@ function showOrHideDiv() {
   }
 }
 
-
-
-
 var header = document.getElementById("sidebarCode");
 header.innerHTML = `  <!-- start -->
 <div id="demo">
-  <div id="one"></div>
+    <div id="showcase-wrapper" style="width: 22%!important;">
+        <div id="myCalendarWrapper"></div>
+        <div id="example">
+           <!-- <h3>currentValue:
+                <p id="current-date"></p>
+            </h3>
+            <h3>currentValue.getDay():
+                <p id="current-day"></p>
+            </h3>
+            <h3>currentValue.toDateSring():
+                <p id="current-datestring"></p>
+            </h3>-->
+        </div>
+    </div>
   
 <div class="lineDiv-portal pl-0 pr-1">
   <hr>
