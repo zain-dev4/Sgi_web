@@ -37,121 +37,59 @@
    
 
           <div class="row justify-portal mb-3">
-            
-
-            <div class="maxwidth-17-portal">
-              <div class="input-group ">
-                <input  type="text" class="form-control text-center" placeholder="Categoria"
-                  aria-label="Text input with dropdown button">
-                <div class="input-group-append">
-                  <button  class="btn bg-dropdown-Portal dropdown-toggle text-white" type="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false"  onclick=" populateSelect()"></button>
-                  <div class="dropdown-menu" >
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div role="separator" class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
+              <div class="col-md-2 p-0">
+                <div class="form-group">
+                  <select  class="form-control"ng-model="user.bankName" ng-change="myFunc()">
+                    <option selected disabled value="">Category</option>
+                    <option ng-repeat="cat in cat" value="{{cat.name}}">{{cat.name}}</option>
+                  </select>
                 </div>
               </div>
-            </div>
-
-
-
-            <div class="maxwidth-17-portal">
-              <div class="input-group ">
-                <input type="text" class="form-control text-center " placeholder="Curso"
-                  aria-label="Text input with dropdown button">
-                <div class="input-group-append">
-                  <button class="btn bg-dropdown-Portal dropdown-toggle text-white" type="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false"></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div role="separator" class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
-                </div>
+<div class="col-md-2 p-0">
+  <div class="form-group">
+   <select ng-model="user.branch" class="form-control">
+    <option selected disabled value="">Course</option>
+    <option ng-repeat="course in getBranches(user.bankName)" value="{{course.name}}">{{ course.name }}</option>
+  </select>
+ </div>
+</div>
+            <div class="col-md-2 p-0">
+              <div class="form-group">
+                <select class="form-control" name="" id="" ng-model="serial">
+                  <option value="" selected disabled>Serie</option>
+                  <option ng-repeat="x in serialopt">{{x}}</option>
+                </select>
               </div>
             </div>
-
-
-
-            <div class="maxwidth-17-portal">
-              <div class="input-group ">
-                <input type="text" class="form-control text-center " placeholder="Serie"
-                  aria-label="Text input with dropdown button">
-                <div class="input-group-append">
-                  <button class="btn bg-dropdown-Portal dropdown-toggle text-white" type="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false"></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div role="separator" class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
+              <div class="col-md-2 p-0">
+                <div class="form-group">
+                  <select class="form-control" name="" id="" ng-model="turma">
+                    <option value="" selected disabled>Turma</option>
+                    <option ng-repeat="x in turmaopt">{{x}}</option>
+                  </select>
                 </div>
               </div>
-            </div>
-
-
-            <div class="maxwidth-17-portal">
-              <div class="input-group ">
-                <input type="text" class="form-control text-center " placeholder="Turma"
-                  aria-label="Text input with dropdown button">
-                <div class="input-group-append">
-                  <button class="btn bg-dropdown-Portal dropdown-toggle text-white" type="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false"></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div role="separator" class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
-                </div>
+            <div class="col-md-2 p-0">
+              <div class="form-group">
+                <select class="form-control" name="" id="" ng-model="discipline">
+                  <option value="" selected disabled>Disciplina</option>
+                  <!-- <option value="" selected disabled>Turma</option> -->
+                  <option ng-repeat="x in discipline">{{x}}</option>
+                </select>
               </div>
             </div>
-
-
-            
-            <div class="maxwidth-17-portal">
-              <div class="input-group ">
-                <input type="text" class="form-control text-center " placeholder="Disciplina"
-                  aria-label="Text input with dropdown button">
-                <div class="input-group-append">
-                  <button class="btn bg-dropdown-Portal dropdown-toggle text-white" type="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false"></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div role="separator" class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-
           </div>
-
           <div class="">
             <h4>Comunicados</h4>
-            <textarea rows="10" class="bg-light width-text-box-portal"  placeholder="Digite aqui">
+            <textarea rows="10" class="bg-light width-text-box-portal" ng-model="comunicados" placeholder="Digite aqui">
                   </textarea>
             <br>
-
+<!-- {{comunicados}} -->
 
             <button class="btn btn-default"><i class="fa  fa-picture-o"></i></button>
             <button class="btn btn-default"><i class="fa  fa-link"></i></button>
 
-            <button class="btn btn-success float-right ">Enviar</button>
+            <button class="btn btn-success float-right" ng-click="responsedata(user.bankName,user.branch,serial,turma,discipline,comunicados)">Enviar</button>
           </div>
           <div class="row mt-3 border-bottom border-dark">
             <div class="col-md-12">
@@ -166,11 +104,11 @@
                       <b class="text-left text-danger">Suco</b>
                     </div>
                     <div class="col-md-4 col-4 col-sm-4 text-right">
-                      <input id="m1" type="checkbox" value="1" />
+                      <input id="m1" type="radio" ng-model="socotudo" value="1" />
                       <label class="m1-btn text-center" for="m1"><b>M</b></label>
                     </div>
                     <div class="col-md-5 col-5 col-sm-5  text-left">
-                      <input id="inpLock-portal-1" type="checkbox" value="1" />
+                      <input id="inpLock-portal-1" type="radio" ng-model="socotudo" value="0" />
                       <label class="btn-lock text-center" for="inpLock-portal-1"><b>T</b></label>
                     </div>
                   </div>
@@ -180,11 +118,11 @@
                       <b class="text-left text-danger">Fruta</b>
                     </div>
                     <div class="col-md-4 col-4 col-sm-4 text-right">
-                      <input id="m2" type="checkbox" value="1" />
+                      <input id="m2" type="radio" ng-model="frutasoco" value="1" />
                       <label class="m1-btn text-center" for="m2"><b>M</b></label>
                     </div>
                     <div class="col-md-5 col-5 col-sm-5  text-left">
-                      <input id="inpLock-portal-2" type="checkbox" value="1" />
+                      <input id="inpLock-portal-2" ng-model="frutasoco" type="radio" value="0" />
                       <label class="btn-lock text-center" for="inpLock-portal-2"><b>T</b></label>
                     </div>
                   </div>
@@ -194,11 +132,11 @@
                       <b class="text-left text-danger">Lanche</b>
                     </div>
                     <div class="col-md-4 col-4 col-sm-4 text-right">
-                      <input id="m3" type="checkbox" value="1" />
+                      <input id="m3" type="radio" value="1" ng-model="lanchesoco" />
                       <label class="m1-btn text-center" for="m3"><b>M</b></label>
                     </div>
                     <div class="col-md-5 col-5 col-sm-5  text-left">
-                      <input id="inpLock-portal-3" type="checkbox" value="1" />
+                      <input id="inpLock-portal-3" type="radio" value="0" ng-model="lanchesoco" />
                       <label class="btn-lock text-center" for="inpLock-portal-3"><b>T</b></label>
                     </div>
                   </div>
@@ -208,11 +146,11 @@
                       <b class="text-left  text-danger">Almoco</b>
                     </div>
                     <div class="col-md-4 col-4 col-sm-4 text-right">
-                      <input id="m4" type="checkbox" value="1" />
+                      <input id="m4" type="radio" ng-model="almocosoco" value="1" />
                       <label class="m1-btn text-center" for="m4"><b>M</b></label>
                     </div>
                     <div class="col-md-5 col-5 col-sm-5  text-left">
-                      <input id="inpLock-portal-4" type="checkbox" value="1" />
+                      <input id="inpLock-portal-4" ng-model="almocosoco" type="radio" value="0" />
                       <label class="btn-lock text-center" for="inpLock-portal-4"><b>T</b></label>
                     </div>
                   </div>
@@ -222,11 +160,11 @@
                       <b class="text-left text-danger">Mamadeiro</b>
                     </div>
                     <div class="col-md-4 col-4 col-sm-4 text-right">
-                      <input id="m5" type="checkbox" value="1" />
+                      <input id="m5" type="radio" ng-model="mamadeirosoco" value="1" />
                       <label class="m1-btn text-center" for="m5"><b>M</b></label>
                     </div>
                     <div class="col-md-5 col-5 col-sm-5  text-left">
-                      <input id="inpLock-portal-5" type="checkbox" value="1" />
+                      <input id="inpLock-portal-5" ng-model="mamadeirosoco" type="radio" value="0" />
                       <label class="btn-lock text-center" for="inpLock-portal-5"><b>T</b></label>
                     </div>
                   </div>
@@ -235,40 +173,34 @@
                   <h6 class="text-center text-danger">Parte</h6>
                   <!-- first row  -->
                   <div class="row border-dark border-bottom m-0 p-0">
-
-
                     <div class="col-md-6 col-6 col-sm-6 text-right">
-                      <input id="m6" type="checkbox" value="1" />
+                      <input id="m6" type="radio" ng-model="socoparte" value="1" />
                       <label class="m1-btn text-center" for="m6"><b>M</b></label>
                     </div>
                     <div class="col-md-6 col-6 col-sm-6  text-left">
-                      <input id="inpLock-portal-6" type="checkbox" value="1" />
+                      <input id="inpLock-portal-6" ng-model="socoparte" type="radio" value="0" />
                       <label class="btn-lock text-center" for="inpLock-portal-6"><b>T</b></label>
                     </div>
                   </div>
                   <!-- second row  -->
                   <div class="row border-dark border-bottom m-0 p-0">
-
-
                     <div class="col-md-6 col-6 col-sm-6 text-right">
-                      <input id="m7" type="checkbox" value="1" />
+                      <input id="m7" type="radio" ng-model="frutaparte" value="1" />
                       <label class="m1-btn text-center" for="m7"><b>M</b></label>
                     </div>
                     <div class="col-md-6 col-6 col-sm-6  text-left">
-                      <input id="inpLock-portal-7" type="checkbox" value="1" />
+                      <input id="inpLock-portal-7" type="radio" ng-model="frutaparte" value="0" />
                       <label class="btn-lock text-center" for="inpLock-portal-7"><b>T</b></label>
                     </div>
                   </div>
                   <!-- 3rd row  -->
                   <div class="row border-dark border-bottom m-0 p-0">
-
-
                     <div class="col-md-6 col-6 col-sm-6 text-right">
-                      <input id="m8" type="checkbox" value="1" />
+                      <input id="m8" type="radio" ng-model="lancheparte" value="1" />
                       <label class="m1-btn text-center" for="m8"><b>M</b></label>
                     </div>
                     <div class="col-md-6 col-6 col-sm-6  text-left">
-                      <input id="inpLock-portal-8" type="checkbox" value="1" />
+                      <input id="inpLock-portal-8" ng-model="lancheparte" type="radio" value="0" />
                       <label class="btn-lock text-center" for="inpLock-portal-8"><b>T</b></label>
                     </div>
                   </div>
@@ -277,11 +209,11 @@
 
 
                     <div class="col-md-6 col-6 col-sm-6 text-right">
-                      <input id="m9" type="checkbox" value="1" />
+                      <input id="m9" type="radio" ng-model="almocoparte" value="1" />
                       <label class="m1-btn text-center" for="m9"><b>M</b></label>
                     </div>
                     <div class="col-md-6 col-6 col-sm-6  text-left">
-                      <input id="inpLock-portal-9" type="checkbox" value="1" />
+                      <input id="inpLock-portal-9" ng-model="almocoparte" type="radio" value="0" />
                       <label class="btn-lock text-center" for="inpLock-portal-9"><b>T</b></label>
                     </div>
                   </div>
@@ -290,11 +222,11 @@
 
 
                     <div class="col-md-6 col-6 col-sm-6 text-right">
-                      <input id="m10" type="checkbox" value="1" />
+                      <input id="m10" type="radio" ng-model="mamadeiroparte" value="1" />
                       <label class="m1-btn text-center" for="m10"><b>M</b></label>
                     </div>
                     <div class="col-md-6 col-6 col-sm-6  text-left">
-                      <input id="inpLock-portal-10" type="checkbox" value="1" />
+                      <input id="inpLock-portal-10" ng-model="mamadeiroparte" type="radio" value="0" />
                       <label class="btn-lock text-center" for="inpLock-portal-10"><b>T</b></label>
                     </div>
                   </div>
@@ -304,14 +236,12 @@
                   <h6 class="text-center text-danger">Rejeitou</h6>
                   <!-- 1strow  -->
                   <div class="row border-dark border-bottom m-0 p-0">
-
-
                     <div class="col-md-6 col-6 col-sm-6 text-right">
-                      <input id="m11" type="checkbox" value="1" />
+                      <input id="m11" type="radio" ng-model="sucorejeitou" value="1" />
                       <label class="m1-btn text-center" for="m11"><b>M</b></label>
                     </div>
                     <div class="col-md-6 col-6 col-sm-6  text-left">
-                      <input id="inpLock-portal-11" type="checkbox" value="1" />
+                      <input id="inpLock-portal-11" ng-model="sucorejeitou" type="radio" value="0" />
                       <label class="btn-lock text-center" for="inpLock-portal-11"><b>T</b></label>
                     </div>
                   </div>
@@ -320,11 +250,11 @@
 
 
                     <div class="col-md-6 col-6 col-sm-6 text-right">
-                      <input id="m12" type="checkbox" value="1" />
+                      <input id="m12" type="radio" ng-model="frutarejeitou" value="1" />
                       <label class="m1-btn text-center" for="m12"><b>M</b></label>
                     </div>
                     <div class="col-md-6 col-6 col-sm-6  text-left">
-                      <input id="inpLock-portal-12" type="checkbox" value="1" />
+                      <input id="inpLock-portal-12" type="radio" ng-model="frutarejeitou" value="0" />
                       <label class="btn-lock text-center" for="inpLock-portal-12"><b>T</b></label>
                     </div>
                   </div>
@@ -333,24 +263,22 @@
 
 
                     <div class="col-md-6 col-6 col-sm-6 text-right">
-                      <input id="m13" type="checkbox" value="1" />
+                      <input id="m13" type="radio" value="1" ng-model="lancherejeitou" />
                       <label class="m1-btn text-center" for="m13"><b>M</b></label>
                     </div>
                     <div class="col-md-6 col-6 col-sm-6  text-left">
-                      <input id="inpLock-portal-13" type="checkbox" value="1" />
+                      <input id="inpLock-portal-13" type="radio" value="0" ng-model="lancherejeitou" />
                       <label class="btn-lock text-center" for="inpLock-portal-13"><b>T</b></label>
                     </div>
                   </div>
                   <!-- 4th row  -->
                   <div class="row border-dark border-bottom m-0 p-0">
-
-
                     <div class="col-md-6 col-6 col-sm-6 text-right">
-                      <input id="m14" type="checkbox" value="1" />
+                      <input id="m14" type="radio" value="1" ng-model="almocorejeitou" />
                       <label class="m1-btn text-center" for="m14"><b>M</b></label>
                     </div>
                     <div class="col-md-6 col-6 col-sm-6  text-left">
-                      <input id="inpLock-portal-14" type="checkbox" value="1" />
+                      <input id="inpLock-portal-14" type="radio" value="0" ng-model="almocorejeitou" />
                       <label class="btn-lock text-center" for="inpLock-portal-14"><b>T</b></label>
                     </div>
                   </div>
@@ -359,11 +287,11 @@
 
 
                     <div class="col-md-6 col-6 col-sm-6 text-right">
-                      <input id="m15" type="checkbox" value="1" />
+                      <input id="m15" type="radio" value="1" ng-model="mamadeirorejeitou" />
                       <label class="m1-btn text-center" for="m15"><b>M</b></label>
                     </div>
                     <div class="col-md-6 col-6 col-sm-6  text-left">
-                      <input id="inpLock-portal-15" type="checkbox" value="1" />
+                      <input id="inpLock-portal-15" type="radio" value="0" ng-model="mamadeirorejeitou" />
                       <label class="btn-lock text-center" for="inpLock-portal-15"><b>T</b></label>
                     </div>
                   </div>
@@ -394,11 +322,11 @@
                         <b class="text-left text-white">banho </b>
                       </div>
                       <div class="col-md-4 col-4 col-sm-4 text-right">
-                        <input id="input-check-portal-for-btn-label" type="checkbox" value="1" />
+                        <input id="input-check-portal-for-btn-label" ng-model="banho" type="radio" value="1" />
                         <label class="input-check-portal-for-btn text-center" for="input-check-portal-for-btn-label"><b>S</b></label>
                       </div>
                       <div class="col-md-4 col-4 col-sm-4  text-left">
-                        <input id="inp-btn-inner-portal" type="checkbox" value="1" />
+                        <input id="inp-btn-inner-portal" type="radio" ng-model="banho" value="0" />
                         <label class="input-check-portal-for-btn text-center" for="inp-btn-inner-portal"><b>N</b></label>
                       </div>
                     </div></button>
@@ -415,17 +343,17 @@
                 <h4 class="text-left text-danger">Evacoacao:</h4>
               </div>
               <div class="col-md-4 col-4 col-sm-4 text-right">
-                <input id="m16" type="checkbox" value="1" />
+                <input id="m16" type="radio" value="1" ng-model="evacoacaoRad" />
                 <label class="m1-btn text-center" for="m16"><b>M</b></label>
                 
               </div>
               <div class="col-md-5 col-5 col-sm-5 d-flex text-left ">
                 <div>
-                <input id="inpLock-portal-16" type="checkbox" value="1" />
+                <input id="inpLock-portal-16" type="radio" ng-model="evacoacaoRad" value="0" />
                 <label class="btn-lock text-center" for="inpLock-portal-16"><b>T</b></label>
               </div>
                 <div class=" ml-4 border-suno-portal  ">   
-                  <input type="text"name="dormiede" class="remove-border-portal" >
+                  <input type="text" ng-model="dormiedeText" class="remove-border-portal" >
                 </div>
                   <div class="checktop-portal">x</div>
               </div>
@@ -433,22 +361,22 @@
               </div>
               <div class="row mt-2 p-3  ">
                 <div class="col-md-4 d-flex">
-                  <input id="m20" type="checkbox" value="1" />
+                  <input id="m20" type="radio" ng-model="Normal" value="1" />
                   <label class="m1-btn text-center" for="m20"></label><p>Normal</p>
                 </div>
                 <div class="col-md-4 d-flex">
-                  <input id="m21" type="checkbox" value="1" />
+                  <input id="m21" type="radio" ng-model="Pastoso" value="1" />
                   <label class="m1-btn text-center" for="m21"></label><p>Pastoso</p>
                 </div>
                 <div class="col-md-4 d-flex">
-                  <input id="m22" type="checkbox" value="1" />
+                  <input id="m22" type="radio" ng-model="Liquido" value="1" />
                   <label class="m1-btn text-center" for="m22"></label><p>Liquido</p>
                 </div>
                 <div class="col-md-2 col-sm-2 col-2">
                   <h4 class="text-left text-danger">Ciente:</h4>
                 </div>
                 <div class="col-md-10 col-10 col-sm-10 text-left">
-                  <input id="m23" type="checkbox" value="1" />
+                  <input id="m23" type="radio" value="1" />
                   <label class="m1-btn text-center" for="m23"><b>S</b></label>
                   
                 </div>
