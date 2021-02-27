@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    </head>
+ <style>
+     .red-text{
+  color:red;
+}
+ </style>
+<body>
+
+        <div class="container-fluid" ng-app="myApp">
+            <div class="row" style="justify-content: center;">
+                <div class="col-md-6">
+                    <div class="form-area card p-4 mt-5" ng-controller="formCtrl" style="background-color: #F8F8F8;">  
+                        <form role="form" name="inquiryForm" novalidate>
+                        <br style="clear:both">
+                                    <h3 style="margin-bottom: 25px; text-align: center;">Register</h3>
+                                    <div class="form-group">
+                                        <input name="name" ng-model="name" id="nam" type="text" ng-pattern="name_add" ng-required="true" autocomplete="off" placeholder="Name" class="form-control" >
+                            
+                            <span class="red-text" ng-if="inquiryForm.name.$error.required && inquiryForm.name.$dirty">Name is a required field</span>
+                            
+                            <!-- <span class="red-text" ng-show="inquiryForm.name.$error.pattern">Invalid Email</span> -->
+                                    </div>
+                                    <div class="form-group">
+                                        <input name="email" ng-model="email" id="eml" type="text" ng-pattern="eml_add" ng-required="true" autocomplete="off" placeholder="Email" class="form-control" >
+                            
+                            <span class="red-text" ng-if="inquiryForm.email.$error.required && inquiryForm.email.$dirty">Email is a required field</span>
+                            
+                            <span class="red-text" ng-show="inquiryForm.email.$error.pattern">Invalid Email</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input name="contact" ng-model="contact" id="c_num" type="text" ng-required="true" ng-pattern="ph_numbr" autocomplete="off" placeholder="Contact Number" class="form-control">
+                            
+                            <span class="red-text" ng-if="inquiryForm.contact.$error.required && inquiryForm.contact.$dirty">Contact number is a required field</span>
+                            <span class="red-text" ng-show="inquiryForm.contact.$error.pattern">Please enter a 10 digit number</span>
+                            
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <input name="password" ng-model="password" id="pass" type="password" ng-required="true" ng-pattern="pass" autocomplete="off" placeholder="Password" class="form-control">
+                            
+                            <span class="red-text" ng-if="inquiryForm.passowrd.$error.required && inquiryForm.password.$dirty">Password is a required field</span>
+                            <span class="red-text" ng-show="inquiryForm.password.$error.pattern">Please enter a 10 digit number</span>
+                            
+                                    </div>
+                                    <div class="form-group">
+                                        <input name="c_password" ng-model="c_password" id="c_pass" type="password" ng-required="true" ng-pattern="c_pass" autocomplete="off" placeholder="Confirm Password" class="form-control">
+                            
+                            <span class="red-text" ng-if="inquiryForm.c_passowrd.$error.required && inquiryForm.c_password.$dirty">Confirm Password is a required field</span>
+                            <span class="red-text" ng-show="inquiryForm.c_password.$error.pattern">Please enter a 10 digit number</span>
+                            
+                                    </div>
+                        <button type="button" id="submit" name="submit" class="btn btn-primary float-right" ng-disabled="inquiryForm.$invalid">Submit Form</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+<script>
+var app = angular.module("myApp", []);
+app.controller("formCtrl", ['$scope', function($scope) {
+        $scope.ph_numbr = /^\+?\d{10}$/;
+        $scope.pass = /^\+?\d{10}$/;
+        $scope.c_pass = /^\+?\d{10}$/;
+        $scope.eml_add = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+}]);
+</script>
+
+</body>
+</html>
