@@ -98,8 +98,8 @@ padding: 5px;
     outline: none;
     border: 2px solid transparent;
     box-sizing: inherit;
-    cursor: not-allowed;
-    background-color: rgba(30, 39, 51, 0.2);
+    /* cursor: not-allowed;
+    background-color: rgba(30, 39, 51, 0.2); */
     box-shadow: 1px 1px rgba(0, 0, 0, 0);
 
 }
@@ -123,7 +123,7 @@ padding: 5px;
     box-sizing: inherit;
     padding: 0.1em;
     margin: 0;
-     transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 #calendar #navigation-wrapper #previous-month {
     cursor: pointer;
@@ -133,8 +133,8 @@ padding: 5px;
     width: 1.6em;    
     box-sizing: inherit;
     padding: 0.1em;
-  position: absolute;
-  left: 0px;
+    position: absolute;
+    left: 0px;
     margin: 0;
     transform: rotate(90deg);
 }

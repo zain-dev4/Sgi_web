@@ -269,7 +269,8 @@ CalendarPicker.prototype._insertDaysIntoGrid = function () {
 
         var dateIsBetweenAllowedRange = (this.min || this.max) && (date.toString() !== this.today.toString() && (date < this.min || date > this.max))
         if (dateIsBetweenAllowedRange) {
-            dateElement.classList.add('disabled');
+            dateElement.tabIndex = 0;
+            dateElement.value = date;
         } else {
             dateElement.tabIndex = 0;
             dateElement.value = date;
