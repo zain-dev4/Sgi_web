@@ -23,9 +23,9 @@
   </head>
  
 
-  <body  >
+  <body  ng-controller="firstController">
   
-             
+
              <!-- calender  portion end -->
             <!-- <8 col main - div  -->
             
@@ -53,16 +53,17 @@
               
               
               </div>
-              <div class="row pl-0 a-rowBorder-portal flex-nowrap mt-3">
+              <div class="row pl-0 a-rowBorder-portal flex-nowrap mt-3" ng-repeat="x in array">
                 <div class="col-lg-2 col-md-2 col-sm-2 pr-0 ">
-                  <div class="row twentyEight-portal flex-nowrap">
-                    <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
-                    <div class="col-lg-7 col-md-7 col-sm-8 text-center col1-portal ">
-                      <p class="ime-font-size-portal">09:00</p>
+                <div class="row fiftyEight-portal flex-nowrap">
+                    <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal"></div>
+                    <div class="col-lg-7 col-md-7 col-sm-8 text-center col3-portal ">
+                      <p class="ime-font-size-portal">{{x.time}}</p>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
                   </div>
-                  <div class="row seventyOne-portal flex-nowrap">
+                  
+                  <!-- <div class="row seventyOne-portal flex-nowrap">
                     <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
                     <div class="col-lg-7 col-md-7 col-sm-8 text-center col2-portal">
                       <p class="ime-font-size-portal">09:30</p>
@@ -159,7 +160,7 @@
                       <p class="ime-font-size-portal">4:30</p>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2 borderDashed-portal "></div>
-                  </div>
+                  </div> -->
     
     
     
@@ -171,46 +172,19 @@
     
     
                 <div class="col-lg-10 col-md-10 col-sm-10 borderCol8-portal ">
-                  <div class="row twentyEight-portal row1Style-portal"></div>
-                  <div class="row seventyOne-portal row1Style-portal"></div>
-                  <div class="row fiftyEight-portal row3Style-portal text-center bg-light ">
-                    <h5 class="text-font-size-portal">Disciplina</h5>
+              
+                   <div ng-if="x.color !== '' || x.name !==''" class="row fiftyEight-portal row4Style-portal bg-light " style="border-bottom: 1px solid {{x.color}};">
+                    <h5 class="text-font-size-portal">{{ x.name}}</h5>
                   </div>
-                  <div class="row bg-white twentyEight-portal"></div>
-                  <div class="row fiftyEight-portal row4Style-portal bg-light ">
-                    <h5 class="text-font-size-portal">Disciplina</h5>
-                  </div>
-                  <div class="row seventyOne-portal mt-1 row5style-portal"></div>
-                  <div class="row seventyOne-portal row6style-portal"></div>
-                  <div class="row fiftyEight-portal row7Style-portal bg-light ">
-                    <h5 class="text-font-size-portal">Disciplina</h5>
-                  </div>
-                  <div class="row seventyOne-portal mt-1 row5style-portal"></div>
-                  <!-- progress bar -->
-                  <div class="row seventyOne-portal row6style-portal"></div> <!-- progress end bar -->
-                  <div class="row seventyOne-portal row6style-portal"></div>
-                  <div class="row fiftyEight-portal row8Style-portal bg-light ">
-                    <h5 class="text-font-size-portal">Disciplina</h5>
-                  </div>
-                  <div class="row seventyOne-portal mt-1 row5style-portal"></div>
-                  <div class="row seventyOne-portal row6style-portal"></div>
-                  <div class="row bg-white twentyEight-portal"></div>
-                  <div class="row fiftyEight-portal row8Style-portal bg-light ">
-                    <h5 class="text-font-size-portal">Disciplina</h5>
-                  </div>
-                  <div class="row fiftyEight-portal row9Style-portal bg-light ">
-                    <h5 class="text-font-size-portal">Disciplina</h5>
-                  </div>
+                  <div ng-if="x.color == '' || x.name ==''" class="row seventyOne-portal  row5style-portal"></div>
+                
                 </div>
               </div>
               <div class="row pt-4 pb-5">
-                <div class="col-md-9 col-lg-9 col-sm-12  pt-2 pb-2 pl-3">
-                  <div class="d-flex justify-content-around flex-nowrap">
-                    <div class="d-flex"><span class="dot"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
-                    <div class="d-flex"><span class="dot1"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
-                    <div class="d-flex"><span class="dot2"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
-                    <div class="d-flex"><span class="dot3"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
-                    <div class="d-flex"><span class="dot4"></span>&nbsp;&nbsp;<p>Disciplina</p></div>
+              
+                   <ul ng-repeat="x in array"  style="list-style:block;">
+                <li class="p-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="dot "style="background-color:{{x.color}}!important;word-spacing: 20%;"></span> {{x.name}}</li>
+              </ul>
                   </div>
                 </div>
               </div>
